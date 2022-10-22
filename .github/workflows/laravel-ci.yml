@@ -43,3 +43,5 @@ jobs:
       - name: Install composer dependencies
         run: |
           composer install --no-scripts
+      - name: Run Laravel Pint
+        run: vendor/bin/pint --test
